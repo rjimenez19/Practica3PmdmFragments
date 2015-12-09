@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:name="com.example.rafa.practica3pmdmfragments.FragmentoListView"
+        android:id="@+id/fragListView"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/fragDetalles" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.rafa.practica3pmdmfragments.FragmentoDetalles"
+        android:id="@+id/fragDetalles"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/fragListView"
+        android:layout_toEndOf="@+id/fragListView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
